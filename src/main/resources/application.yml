@@ -1,12 +1,17 @@
-server:
-  port: 9201
-service-url:
-  user-service: http://140.134.26.71:41394
 spring:
-  cloud:
-    gateway:
-      routes:
-        - id: path_route #路由的ID
-          uri: ${service-url.user-service}/tasks #匹配后路由地址
-          predicates: # 断言，路径相匹配的进行路由
-            - Path=/tasks
+  application:
+    name: microservice-api-gateway
+server:
+  port: 0
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://140.134.26.71:50608/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes
+
