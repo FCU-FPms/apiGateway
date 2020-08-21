@@ -3,10 +3,10 @@ spring:
     name: microservice-api-gateway
 server:
   port: 46557
-  address: 140.134.26.71
 eureka:
   instance:
     prefer-ip-address: true
+    ip-address: 140.134.26.71
   client:
     serviceUrl:
       defaultZone: http://140.134.26.71:50608/eureka/
