@@ -2,7 +2,7 @@ spring:
   application:
     name: microservice-api-gateway
 server:
-  port: 0
+  port: 46557
 eureka:
   instance:
     prefer-ip-address: true
