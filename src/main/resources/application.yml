@@ -8,6 +8,7 @@ spring:
           enabled: true
           lowerCaseServiceId: true
       httpclient:
+        connect-timeout: 20000
         response-timeout: 20s
 
 server:
