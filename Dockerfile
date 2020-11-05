@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-COPY apiGateway-0.0.1-SNAPSHOT.jar app.jar
+COPY target/apiGateway-0.0.1-SNAPSHOT.jar app.jar
 
 ENV application-name=ms-apiGateway
 ENV instance-id=instance-id
