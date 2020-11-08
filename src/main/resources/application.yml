@@ -1,15 +1,7 @@
 spring:
   application:
     name: microservice-api-gateway
-  cloude:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lowerCaseServiceId: true
-      httpclient:
-        connect-timeout: 20000
-        response-timeout: 20s
+
 
 server:
   port: 46557
@@ -27,8 +19,6 @@ management:
     web:
       exposure:
         include: "*"
-    gateway:
-      enabled: true
-    
+
         
 
